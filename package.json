@@ -10,6 +10,7 @@
     "ui": "vue ui"
   },
   "dependencies": {
+    "@ulaval/modul-components": "file:../modul/packages/modul-components/ulaval-modul-components-v1.2.0-beta.3.tgz",
     "core-js": "^3.6.4",
     "vue": "^2.6.11",
     "vue-class-component": "^7.2.3",
@@ -36,6 +37,7 @@
     "node-sass": "^4.12.0",
     "prettier": "^1.19.1",
     "sass-loader": "^8.0.2",
+    "source-map-loader": "^0.2.4",
     "typescript": "~3.8.3",
     "vue-template-compiler": "^2.6.11"
   },
