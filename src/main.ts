@@ -1,16 +1,18 @@
 /* eslint-disable @typescript-eslint/typedef */
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import {
+    DialogServicePlugin,
     ENGLISH,
     FormPlugin,
     FRENCH,
+    RichTextLicensePlugin,
     ToastServicePlugin,
     UtilsPlugin,
     UtilsPluginOptions,
 } from '@ulaval/modul-components';
 import '@ulaval/modul-components/lib/modul.min.css';
 import Vue from 'vue';
-import App from './App.vue';
+import App from './app.vue';
 import IconPlugin from './icons/icons';
 import router from './router';
 import './styles/main.scss';
@@ -27,7 +29,9 @@ Vue.config.productionTip = false;
 Vue.use(UtilsPlugin, utilsPluginOptions);
 Vue.use(FormPlugin);
 Vue.use(ToastServicePlugin);
+Vue.use(RichTextLicensePlugin, { key: `test` });
 Vue.use(IconPlugin);
+Vue.use(DialogServicePlugin);
 
 const curLang: string = localStorage.getItem('lang') || FRENCH;
 

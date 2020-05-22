@@ -7,7 +7,7 @@
 
 <script>
 // @ is an alias to /src
-import EtudiantFormulaire from '@/components/EtudiantFormulaire.vue';
+import EtudiantFormulaire from '@/components/etudiant-formulaire.vue';
 
 export default {
     name: 'Home',

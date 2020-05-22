@@ -1,7 +1,6 @@
 <template>
     <div class="app-etudiantformulaire">
         <h1>This is the EtudiantForm Component</h1>
-        <m-phonefield></m-phonefield>
         <div class="formulaire">
             <h3 class="m-u--h4">FORMULAIRE</h3>
             <m-form class="m-u--margin-top" :form-group="formGroup">
@@ -19,8 +18,16 @@
                         :error-message="nameField.errorMessage"
                     ></m-textfield>
                 </div>
-
                 <div>
+                    <h3 class="m-u--h4">Phonefield</h3>
+                    <m-phonefield></m-phonefield>
+                </div>
+                <div>
+                    <h3 class="m-u--h4">Rich text editor</h3>
+                    <m-rich-text-editor></m-rich-text-editor>
+                </div>
+                <div>
+                    <h3 class="m-u--h4">Drodown</h3>
                     <m-dropdown
                         v-model="typeField.value"
                         v-m-control="typeField"
@@ -66,6 +73,7 @@
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
 import '@ulaval/modul-components/lib/phonefield.min.css';
+import '@ulaval/modul-components/lib/rte.min.css';
 import {
     MDatepicker,
     FormGroup,
@@ -86,6 +94,8 @@ import {
     components: {
         'm-phonefield': require('@ulaval/modul-components/lib/phonefield')
             .MPhonefield,
+        'm-rich-text-editor': require('@ulaval/modul-components/lib/rte')
+            .MRichTextEditor,
         'm-button': MButton,
         'm-form': MForm,
         'm-datepicker': MDatepicker,
