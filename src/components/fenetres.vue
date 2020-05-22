@@ -56,4 +56,13 @@ export default class Fenetres extends Vue {
 }
 </script>
 
-<style scoped lang="scss"></style>
+<!-- Add "scoped" attribute to limit CSS to this component only -->
+<style scoped lang="scss">
+@import '~@ulaval/modul-components/dist/styles/commons';
+
+/*
+ .app-etudiantformulaire {
+      background: $m-color--ul-blue;
+    }
+*/
+</style>
