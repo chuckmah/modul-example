@@ -13,13 +13,13 @@ module.exports = {
           // directement dans le debugger de chrome
           test: /\.js$/,
           use: ["source-map-loader"],
-          enforce: "pre"
-        }
-      ]
+          enforce: "pre",
+        },
+      ],
     },
     plugins: [
       // Pour enlever les locale inutile de moments dans le bundle final
-      new ContextReplacementPlugin(/moment[/\\]locale$/, /en-ca|fr-ca/)
-    ]
-  }
+      new ContextReplacementPlugin(/moment[/\\]locale$/, /en-ca|fr-ca/),
+    ],
+  },
 };
